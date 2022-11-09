@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const PORT = 8000
+// const PORT = 8000
 
 const stretches ={
     'Low Back': {
@@ -125,9 +125,9 @@ const stretches ={
     }
 }
 
-app.get('/', (request, response)=>{
-    response.sendFile(__dirname + '/index.html')
-})
+// app.get('/', (request, response)=>{
+//     response.sendFile(__dirname + '/index.html')
+// })
 
 app.get('/api/:bodyPart', (request, response)=>{
     const bodyParts = request.params.bodyPart
