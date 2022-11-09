@@ -125,9 +125,9 @@ const stretches ={
     }
 }
 
-// app.get('/', (request, response)=>{
-//     response.sendFile(__dirname + '/index.html')
-// })
+app.get('/', (request, response)=>{
+    response.sendFile(__dirname + '/server.js')
+})
 
 app.get('/api/:bodyPart', (request, response)=>{
     const bodyParts = request.params.bodyPart
