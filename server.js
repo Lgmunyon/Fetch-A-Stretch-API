@@ -2,12 +2,6 @@ const express = require('express')
 const app = express()
 const PORT = 8000
 
-// const savage ={
-//     'age': 29,
-//     'birthName': 'Sheyaa Bin Abraham-Joseph',
-//     'birthLocation': 'London, England'
-// }
-
 const stretches ={
     'Low Back': {
         'Low back rotation':{
@@ -150,3 +144,5 @@ app.get('/api/:bodyPart', (request, response)=>{
 app.listen(process.env.PORT || PORT , ()=>{
     console.log(`The server is now running on port ${PORT}! You better go catch it!`)
 })
+
+module.exports = app
