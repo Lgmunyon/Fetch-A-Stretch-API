@@ -1,6 +1,7 @@
 const express = require('express')
 
 const app = express()
+const PORT = 8000
 
 
 const stretches ={
@@ -126,14 +127,35 @@ const stretches ={
     }
 }
 
-
-
-app.get('/', (req, res) => {
-    res.send('Express on Vercel')
+app.get('/', (request, response)=>{
+    response.sendFile(__dirname + '/index.html')
 })
-
-app.listen(5000, () => {
-    console.log('Running on port 5000')
+ 
+app.get('/api/:bodyPart', (request, response)=>{
+    const bodyParts = request.params.bodyPart
+    if (stretches[bodyParts]){
+        response.json(stretches[bodyParts])
+    }
+     response.json('No stretch')
 })
-
+ 
+// app.get('/api', (request, response) => {
+//     response.json(stretches)
+// })
+ 
+app.listen(process.env.PORT || PORT , ()=>{
+    console.log(`The server is now running on port ${PORT}! You better go catch it!`)
+})
+ 
 module.exports = app
+
+// app.get('/', (req, res) => {
+//     res.sendFile('Express on Vercel')
+// })
+
+// app.listen(5000, () => {
+//     console.log('Running on port 5000')
+// })
+
+// module.exports = app
+
