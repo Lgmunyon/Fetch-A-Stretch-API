@@ -132,7 +132,7 @@ app.get('/', (request, response)=>{
 })
  
 app.get('/api/:bodyPart', (request, response)=>{
-    const bodyParts = request.params.bodyPart
+    const bodyParts = request.params.bodyPart.toLowerCase()
     if (stretches[bodyParts]){
         response.json(stretches[bodyParts])
     }
