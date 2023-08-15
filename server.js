@@ -5,7 +5,7 @@ const PORT = 8000
 
 
 const stretches ={
-    'Low Back': {
+    'Low Back Stretch': {
         'Low back rotation':{
             'description':'Sitting on a chair with your feet flat on the floor, twist your upper body so your shoulders rotate to one side. You can use the chair for support, holding on to get a deep muscle stretch. Go only as far as you can comfortably. You will feel the pull from your lower back up to the middle of your back. ‘You may experience a painless crack from your spine, but that’s normal; it’s just the joints opening up,’ says Feldman. Hold for 20 seconds or six breaths, and return to the starting position. Repeat on the other side.',
             'video': "<iframe src='https://drive.google.com/file/d/1oEvn-Kz_hKQ7fxA_DpsvVq8tcHkcXhbF/preview' width='640' height='480' allow='autoplay'></iframe>",
@@ -88,7 +88,7 @@ const stretches ={
         },
     },
 
-    'Shoulders':{
+    'Shoulder Stretch':{
         'At your desk pec stretch':{
             'description':'Sit so that your desk is to your side. Place your forearm on the desk, your elbow bent at 90 degrees. Keeping your chest puffed out slowly lean forward while sliding your chair back. Your arm will begin to straighten slightly. Continue leaning forward until you feel a mild stretch in your chest. Breath deep, in and out, while holding this position for 30 seconds. Use your opposite hand to slowly push out of it and repeat on the other side.',
             'video':"<iframe src='https://drive.google.com/file/d/1rdCOVuinLayGQbV8hSW6PTjlJoDar1Ci/preview' width='640' height='480' allow='autoplay'></iframe>",
@@ -111,7 +111,7 @@ const stretches ={
         },
     },
 
-    'Hands':{
+    'Hand Stretch':{
         'One-by-one finger stretch':{
             'description':'Lay your hand on your desk, palm up. Take the opposite hand and push down on all fingers except the index finger. Curl your index finger without allowing the other fingers to move. You should feel a stretch throughout the forearm. Repeat the same process with the other fingers individually. Repeat on the other hand.',
             'video':"<iframe src='https://drive.google.com/file/d/1aNYgxZIL0vYfv5-WVVeerGQoiAntWaeB/preview' width='640' height='480' allow='autoplay'></iframe>",
